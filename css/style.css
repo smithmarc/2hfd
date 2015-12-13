@@ -1,0 +1,26 @@
+* {
+  font-family: 'Fira Sans', sans-serif;
+  background: black;
+  color: white;
+}
+
+h1 {
+  font-size: 82px;
+}
+
+#nav {
+  color: white;
+  font-size: 40px;
+}
+
+container {
+  max-width: 1440px;
+}
+
+@media (max-width: 300px) {
+    h1{font-size: 10px;}
+}
+
+@media (max-width: 350px) {
+    h1{font-size: 14px;}
+}
