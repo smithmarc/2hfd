@@ -1,0 +1,60 @@
+* {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+  background: black;
+}
+
+container {
+}
+
+#main-title h1 {
+  font-size: 400%;
+  padding: 5% 0 0 0;
+  color: white;
+}
+
+#social {
+  padding: 1% 0 0 0;
+}
+
+#nav li {
+  padding: 7.5px 0 7.5px 0;
+  font-size: 24px;
+}
+
+#nav a {
+  color: #fff;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  background: #d1ab67;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+  background-color: #d1ab67;
+}
+
+.carousel {
+  margin-bottom: 2.5%;
+}
+
+.carousel-inner > .item > img {
+    max-height: 550px;
+}
+
+#features h2, p{
+  color: #fff;
+}
+
+#footer {
+  border: 1px solid #d1ab67;
+  color: white;
+}
+
+#footer p {
+  margin: 0;
+}
