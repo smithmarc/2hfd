@@ -1,0 +1,179 @@
+* {
+  font-family: 'Fira Sans', sans-serif;
+  background-color: black;
+}
+
+/* --------------------------------- MASTHEAD ------------------------------- */
+
+.masthead-boxer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  max-width: 1200px;
+  height: 200px;
+  margin: auto;
+}
+
+.logo {
+  height: 100%;
+  width: 226px;
+}
+
+.masthead-title {
+  padding: 40px 0 0 31px;
+  height: 100%;
+  line-height: 1.42em;
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.sub {
+  font-size: 18px;
+  color: #e2b96f;
+  font-style: italic;
+}
+
+#social {
+  padding: 43px 0 0 90px;
+  font-weight: bold;
+}
+
+#social a {
+  color: white;
+}
+
+#social i {
+  padding: 3px 0 0 0;
+}
+
+/* ----------------------------------- NAV ---------------------------------- */
+
+.nav-boxer {
+  max-width: 900px;
+  margin: auto;
+  height: 50px;
+}
+
+.navbar-default {
+  background-color: #e2b96f;
+  border-color: #e2b96f;
+}
+
+div#bs-example-navbar-collapse-1.collapse.navbar-collapse {
+  background-color: #e2b96f;
+}
+
+.navbar a {
+  background-color: #e2b96f;
+  letter-spacing: 0.05em;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  background-color: #cba664;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+  background-color: #d1ab67;
+  color: white;
+}
+
+/* -------------------------------- CAROUSEL -------------------------------- */
+
+.carousel-boxer {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.carousel-indicators {
+  background-color: transparent;
+}
+
+.carousel-caption {
+  background-color: transparent;
+}
+
+.glyphicon {
+  background-color: transparent;
+}
+
+/* background-color: #d1ab67;
+                     #e2b96f
+                     #CBA664*/
+
+/* -------------------------------- FEATURES -------------------------------- */
+
+.features-boxer {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.features {
+  margin: 30px 0 0 0;
+}
+
+.features h2, p {
+  color: #fff;
+}
+
+/* --------------------------------- FOOTER --------------------------------- */
+
+.footer {
+  height: 40px;
+  background-color: #e2b96f;
+  padding: 10px 0 0 0;
+  font-weight: bold;
+}
+
+.left-foot {
+  background-color: #e2b96f;
+}
+
+.middle {
+  background-color: #e2b96f;
+}
+
+.right-foot {
+  background-color: #e2b96f;
+}
+
+.right-foot a {
+  color: white;
+  background-color: #e2b96f;
+}
+
+#extra-space {
+  background-color: #e2b96f;
+}
+
+/* ------------------------------ MOBILE STYLES ----------------------------- */
+
+@media screen and (min-width: 0px) and (max-width: 736px) {
+  #social { display: none; }  /* hide it on small screens */
+  .carousel-boxer { display: none; }
+  .masthead-title { display: none; }
+  .logo
+  {
+    width: 300px;
+    margin: auto;
+  }
+  .nav-boxer {
+    padding: 60px 0 40px 0;
+  }
+  .navbar-header { background-color: #e2b96f; }
+  .nav { background-color: #e2b96f; }
+  .navbar-nav { background-color: #e2b96f; }
+  .nav li { background-color: #e2b96f; }
+  .nav a { background-color: #e2b96f; }
+  .features { display: none; }
+  .footer {display: none; }
+}
