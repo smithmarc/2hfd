@@ -46,6 +46,14 @@
   padding: 3px 0 0 0;
 }
 
+#social a:hover {
+  color: #e2b96f;
+}
+
+#social i:hover {
+  color: #e2b96f;
+}
+
 /* ----------------------------------- NAV ---------------------------------- */
 
 .nav-boxer {
@@ -66,7 +74,7 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse {
 .navbar a {
   background-color: #e2b96f;
   letter-spacing: 0.05em;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -80,9 +88,18 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse {
   color: white;
 }
 
-.navbar-default .navbar-nav>li>a:hover{
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
   background-color: #d1ab67;
   color: white;
+}
+
+.navbar-default .navbar-nav span {
+  background-color: #cba664;
+}
+
+.dropdown-menu {
+  background-color: #cba664;
 }
 
 /* -------------------------------- CAROUSEL -------------------------------- */
@@ -138,7 +155,8 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse {
   background-color: #e2b96f;
 }
 
-.middle {
+.middle,
+.middle span {
   background-color: #e2b96f;
 }
 
@@ -146,7 +164,12 @@ div#bs-example-navbar-collapse-1.collapse.navbar-collapse {
   background-color: #e2b96f;
 }
 
-.right-foot a {
+.right-foot i {
+  color: black;
+  background-color: #e2b96f;
+}
+
+.right-foot i:hover {
   color: white;
   background-color: #e2b96f;
 }
