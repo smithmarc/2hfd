@@ -275,7 +275,7 @@ a {
 .mission-statement
 h3 {
 	color: #e2b96f;
-		font-family: "Ek Mukta", "Arial", sans-serif;
+	font-family: "Ek Mukta", "Arial", sans-serif;
 }
 
 .mission-statement
@@ -368,4 +368,37 @@ hr {
 	background: #333;
 	background-image: linear-gradient(to right, #ccc, #e2b96f, #ccc);
 	max-width: 1200px;
+}
+
+/* ---------------------------- SOLO PAGE STYLES ---------------------------- */
+
+.intro {
+	position: relative;
+	max-width: 750px;
+	width: 100%;
+	margin: auto;
+}
+
+.intro
+h2 {
+	color: #e2b96f;
+	font-family: "Ek Mukta", "Arial", sans-serif;
+}
+
+.intro
+h3 {
+	color: #fff;
+	font-family: "Ek Mukta", "Arial", sans-serif;
+}
+
+.intro
+h4 {
+	color: #fff;
+	font-family: "Ek Mukta", "Arial", sans-serif;
+	line-height: 1.5em;
+}
+
+.intro
+img {
+	margin: 20px 0 20px 0;
 }
