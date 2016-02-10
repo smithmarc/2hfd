@@ -372,6 +372,8 @@ hr {
 
 /* ---------------------------- SOLO PAGE STYLES ---------------------------- */
 
+/* ------------------------------ INTRODUCTION ------------------------------ */
+
 .intro {
 	position: relative;
 	max-width: 750px;
@@ -383,6 +385,11 @@ hr {
 h2 {
 	color: #e2b96f;
 	font-family: "Ek Mukta", "Arial", sans-serif;
+}
+
+.intro
+span {
+	color: #e2b96f;
 }
 
 .intro
@@ -401,4 +408,31 @@ h4 {
 .intro
 img {
 	margin: 20px 0 20px 0;
+}
+
+/* -------------------------------- CONCEPT --------------------------------- */
+
+.concept {
+	position: relative;
+	max-width: 750px;
+	width: 100%;
+	margin: auto;
+}
+
+.concept
+span {
+	color: #e2b96f;
+}
+
+.concept
+h2 {
+	color: #e2b96f;
+	font-family: "Ek Mukta", "Arial", sans-serif;
+}
+
+.concept
+h4 {
+	color: #fff;
+	font-family: "Ek Mukta", "Arial", sans-serif;
+	line-height: 1.5em;
 }
