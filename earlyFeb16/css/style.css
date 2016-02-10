@@ -1,0 +1,371 @@
+/* Base */
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+
+	background: #000; /* Same color as your menu */
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+#page {
+	position: relative; /* Set the position property so z-index will apply */
+	z-index: 20; /* Make sure this is higher than #menu */
+
+	padding: 20px;
+	padding-bottom: 0px;
+
+	background: #000;
+	height: 100%;
+}
+
+#toggle-menu {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 15px 10px;
+	border: 1px solid #eee;
+}
+
+#menu {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	width: 190px;
+	padding: 15px 25px;
+	margin: 0;
+
+	list-style: none;
+	background: #333;
+	z-index: 10; /* Make sure the z-index is lower than the #page */
+}
+
+#menu
+a {
+	display: block;
+	color: #fff;
+	padding: 15px 0;
+	border-bottom: 1px solid rgba( 255, 255, 255, 0.05 );
+}
+
+/* Animations */
+
+#page,
+#menu {
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+}
+
+/* Hide the menu unless it's animating or visible */
+.animating
+#menu,
+.menu-visible
+#menu {
+	display: block;
+}
+
+/***
+* If the animating class is present then apply
+* the CSS transition to #page over 250ms.
+*/
+.animating
+#page {
+	transition: transform .25s ease-in-out;
+	-webkit-transition: -webkit-transform .25s ease-in-out;
+}
+
+/***
+* If the left class is present then transform
+* the #page element 240px to the left.
+*/
+.animating.left
+#page {
+	transform: translate3d( -240px, 0, 0 );
+	-webkit-transform: translate3d( -240px, 0, 0 );
+}
+
+/***
+* If the right class is present then transform
+* the #page element 240px to the right.
+*/
+.animating.right
+#page {
+	transform: translate3d( 240px, 0, 0 );
+	-webkit-transform: translate3d( 240px, 0, 0 );
+}
+
+/***
+* If the menu-visible class is present then
+* shift the #page 240px from the right edge
+* via position: absolute to keep it in the
+* open position. When .animating, .left and
+* .right classes are not present the CSS
+* transform does not apply to #page.
+*/
+.menu-visible
+#page {
+	right: 240px;
+}
+
+/* Hide the #toggle-menu element on larger screens */
+#toggle-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  #toggle-menu {
+    display: block;
+  }
+
+  /* Place all the CSS for your mobile #menu here */
+}
+
+/* ------------------------------- MY STYLES -------------------------------- */
+
+.header-boxer {
+	max-width: 1200px;
+	width: 100%;
+	margin: auto;
+	height: 240px;
+
+	/* For space checking purposes - border: 1px solid #fff; */
+
+}
+
+.logo>img {
+  width: 240px;
+}
+
+.header-title {
+	position: relative;
+	height: 100%;
+	top: 25px;
+}
+
+.header-title,
+h1 {
+	color: #fff;
+	line-height: 1.25em;
+	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-size: 56px;
+	letter-spacing: 2.5px;
+}
+
+.header-subtitle {
+	position: relative;
+	left: 20px;
+	font-family: "Dancing Script", "Arial", cursive;
+	font-size: 30px;
+	color: #e2b96f;
+	font-style: italic;
+	letter-spacing: normal;
+}
+
+.social {
+	position: relative;
+	top: 50px;
+	left: 2.5%;
+}
+
+.social
+a {
+	color: #e2b96f;
+}
+
+.instagram-icon {
+	position: absolute;
+}
+
+.facebook-icon {
+	position: absolute;
+	top: 50px;
+}
+
+.email-icon {
+	position: absolute;
+	top: 100px;
+}
+
+/* ---------------------------------- NAV ----------------------------------- */
+
+.nav-boxer {
+	position: relative;
+	max-width: 900px;
+	margin: auto;
+	top: 20px;
+}
+
+/*
+ * This is the navbar itself
+ */
+.navbar-default {
+	background-color: #e2b96f;
+	border-color: #f2b96f;
+}
+
+/*
+ * This is the active list item
+ */
+.navbar-default
+.navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+	color: #000;
+	background-color: #cba664;
+}
+
+.navbar
+a {
+	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/*
+ * These are the non-active list items
+ */
+.navbar-default
+.navbar-nav>li>a {
+	color: #fff;
+}
+
+/*
+ * Controls the height and width of the navbar links
+ */
+.nav>li>a {
+	position: relative;
+	padding: 15px 38px;
+
+	/* TODO: Media Query - Problem occurs around width: 830.75px; */
+}
+
+/* ------------------------------- CAROUSEL --------------------------------- */
+
+.carousel-boxer {
+	position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.carousel-control {
+	color: #e2b96f;
+}
+
+/*
+ * Match image height to the smallest image height
+ * to keep site consistent size.
+ */
+.carousel-inner img {
+		max-height: 600px;
+}
+
+/* --------------------------- MISSION STATEMENT ---------------------------- */
+
+.mission-statement {
+	position: relative;
+	max-width: 600px;
+	margin: auto;
+}
+
+.mission-statement
+h3 {
+	color: #e2b96f;
+		font-family: "Ek Mukta", "Arial", sans-serif;
+}
+
+.mission-statement
+h4 {
+	color: #fff;
+	font-family: "Ek Mukta", "Arial", sans-serif;
+}
+
+.mission-statement
+span {
+	color: #e2b96f;
+}
+
+/* ------------------------------- FEATURES --------------------------------- */
+
+.features-boxer {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.features
+h2 {
+	font-family: "Ek Mukta", "Arial", sans-serif;
+	color: #e2b96f;
+}
+
+.features
+p {
+	font-family: "Ek Mukta", "Arial", sans-serif;
+	color: #fff;
+}
+
+/* -------------------------------- FOOTER ---------------------------------- */
+
+.footer {
+	max-width: 1200px;
+	width: 100%;
+	margin: auto;
+	height: 200px;
+	background-color: #e2b96f;
+	border-radius: 10px 10px 0px 0px
+}
+
+.footer-top {
+	height: 170px;
+	color: #111;
+}
+
+.footer-top
+.contact {
+	position: relative;
+	left: -20%;
+}
+
+.footer-top
+.find {
+	position: relative;
+	left: 20%;
+}
+
+.footer-top
+i {
+	position: relative;
+	top: 10px;
+}
+
+.footer-top
+h3 {
+	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-weight: bold;
+	margin-top: 4px;
+}
+
+.footer-top
+a {
+	color: #111;
+}
+
+.footer-bottom {
+	height: 30px;
+}
+
+/* -------------------------------- DIVIDER --------------------------------- */
+
+.divider
+hr {
+	border: 0;
+	height: 1px;
+	background: #333;
+	background-image: linear-gradient(to right, #ccc, #e2b96f, #ccc);
+	max-width: 1200px;
+}
