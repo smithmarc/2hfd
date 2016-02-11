@@ -509,3 +509,12 @@ li {
 	border: 2px solid #e2b96f;
 	padding: 7.5px 0px;
 }
+
+/* --------------------------------- NEWS ----------------------------------- */
+
+.news {
+	position: relative;
+	max-width: 500px;
+	width: 100%;
+	margin: auto;
+}
