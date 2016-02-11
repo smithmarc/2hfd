@@ -150,7 +150,7 @@ a {
 h1 {
 	color: #fff;
 	line-height: 1.25em;
-	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-family: "Ek Mukta", sans-serif;
 	font-size: 56px;
 	letter-spacing: 2.5px;
 }
@@ -158,7 +158,7 @@ h1 {
 .header-subtitle {
 	position: relative;
 	left: 20px;
-	font-family: "Dancing Script", "Arial", cursive;
+	font-family: "Dancing Script", cursive;
 	font-size: 30px;
 	color: #e2b96f;
 	font-style: italic;
@@ -224,7 +224,7 @@ a {
 
 .navbar
 a {
-	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-family: "Ek Mukta", sans-serif;
 	font-size: 18px;
 	font-weight: bold;
 }
@@ -245,6 +245,23 @@ a {
 	padding: 15px 38px;
 
 	/* TODO: Media Query - Problem occurs around width: 830.75px; */
+}
+
+/*
+ * Controls the color of the nav item when in dropdown-menu mode
+ */
+.navbar-default
+.navbar-nav>.open>a,
+.navbar-default
+.navbar-nav>.open>a:focus,
+.navbar-default
+.navbar-nav>.open>a:hover {
+	color: #000;
+	background-color: #cba664;
+}
+
+.dropdown-menu {
+	background-color: #e2b96f;
 }
 
 /* ------------------------------- CAROUSEL --------------------------------- */
@@ -279,13 +296,13 @@ a {
 .mission-statement
 h3 {
 	color: #e2b96f;
-	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-family: "Ek Mukta", sans-serif;
 }
 
 .mission-statement
 h4 {
 	color: #fff;
-	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-family: "Ek Mukta", sans-serif;
 }
 
 .mission-statement
@@ -303,13 +320,13 @@ span {
 
 .features
 h2 {
-	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-family: "Ek Mukta", sans-serif;
 	color: #e2b96f;
 }
 
 .features
 p {
-	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-family: "Ek Mukta", sans-serif;
 	color: #fff;
 }
 
@@ -355,7 +372,7 @@ i {
 
 .footer-top
 h3 {
-	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-family: "Ek Mukta", sans-serif;
 	font-weight: bold;
 	margin-top: 4px;
 }
@@ -367,6 +384,7 @@ a {
 
 .footer-bottom {
 	height: 30px;
+	font-family: "Ek Mukta", sans-serif;
 }
 
 /* -------------------------------- DIVIDER --------------------------------- */
@@ -445,4 +463,49 @@ h4 {
 	color: #fff;
 	font-family: "Ek Mukta", "Arial", sans-serif;
 	line-height: 1.5em;
+}
+
+/* --------------------------------- STAFF ---------------------------------- */
+
+.staff {
+	position: relative;
+	max-width: 750px;
+	width: 100%;
+	margin: auto;
+}
+
+.staff
+h2 {
+	color: #e2b96f;
+	font-family: "Ek Mukta", "Arial", sans-serif;
+}
+
+.staff
+h3 {
+	color: #fff;
+	font-family: "Ek Mukta", "Arial", sans-serif;
+}
+
+.staff
+h4 {
+	font-family: "Ek Mukta", "Arial", sans-serif;
+	color: #fff;
+	line-height: 1.5em;
+}
+
+.staff
+h5 {
+	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+.staff
+li {
+	color: #e2b96f;
+}
+
+.job-position {
+	border: 2px solid #e2b96f;
+	padding: 7.5px 0px;
 }
