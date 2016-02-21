@@ -242,7 +242,7 @@ a {
  */
 .nav>li>a {
 	position: relative;
-	padding: 15px 38px;
+	padding: 15px 36px;
 
 	/* TODO: Media Query - Problem occurs around width: 830.75px; */
 }
@@ -387,6 +387,11 @@ a {
 	font-family: "Ek Mukta", sans-serif;
 }
 
+.footer-bottom
+h5 {
+	font-size: 12px;
+}
+
 /* -------------------------------- DIVIDER --------------------------------- */
 
 .divider
@@ -517,4 +522,54 @@ li {
 	max-width: 500px;
 	width: 100%;
 	margin: auto;
+}
+
+/* -------------------------------- CONTACT --------------------------------- */
+
+.contact-form {
+	position: relative;
+	max-width: 750px;
+	width: 100%;
+	margin: auto;
+}
+
+.contact-form
+h2 {
+	font-family: "Ek Mukta", "Arial", sans-serif;
+	color: #e2b96f;
+}
+
+.contact-form
+h4 {
+	font-family: "Ek Mukta", "Arial", sans-serif;
+	color: #fff;
+	position: relative;
+	top: 18px;
+}
+
+form {
+	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-size: 20px;
+	padding: 10px 0px;
+}
+
+input {
+	width: 100%;
+	margin: 2.5px 0px;
+	border-radius: 2px;
+}
+
+textarea {
+	min-width: 100%;
+	margin: 2.5px 0px;
+	border-radius: 2px;
+}
+
+#submit {
+	position: relative;
+	border-radius: 5px;
+	width: 50%;
+	left: 25%;
+	background-color: #e2b96f;
+	border-color: #e2b96f;
 }
