@@ -243,7 +243,7 @@ a {
  */
 .nav>li>a {
 	position: relative;
-	padding: 15px 38.5px;
+	padding: 15px 37px;
 
 	/* TODO: Media Query - Problem occurs around width: 830.75px; */
 }
@@ -637,19 +637,19 @@ textarea {
 		font-size: 16px;
 	}
 	.nav>li>a {
-		padding: 15px 41px;
+		padding: 15px 38px;
 	}
 }
 
 @media all and (max-width: 986px) {
 	.nav>li>a {
-		padding: 15px 40.5px;
+		padding: 15px 37.5px;
 	}
 }
 
 @media all and (max-width: 980px) {
 	.nav>li>a {
-		padding: 15px 39.5px;
+		padding: 15px 36.5px;
 	}
 }
 
@@ -662,7 +662,7 @@ textarea {
 		top: 10px;
 	}
 	.nav>li>a {
-		padding: 15px 38.5px;
+		padding: 15px 35.5px;
 	}
 	.header-boxer {
 		height: 200px;
@@ -674,31 +674,31 @@ textarea {
 
 @media all and (max-width: 956px) {
 	.nav>li>a {
-		padding: 15px 37.5px;
+		padding: 15px 34.5px;
 	}
 }
 
 @media all and (max-width: 945px) {
 	.nav>li>a {
-		padding: 15px 36.5px;
+		padding: 15px 33.5px;
 	}
 }
 
 @media all and (max-width: 927px) {
 	.nav>li>a {
-		padding: 15px 35px;
+		padding: 15px 32px;
 	}
 }
 
 @media all and (max-width: 909px) {
 	.nav>li>a {
-		padding: 15px 33.5px;
+		padding: 15px 30.5px;
 	}
 }
 
 @media all and (max-width: 891px) {
 	.nav>li>a {
-		padding: 15px 32px;
+		padding: 15px 29px;
 	}
 }
 
@@ -717,19 +717,19 @@ textarea {
 		top: 35px;
 	}
 	.nav>li>a {
-		padding: 15px 30.5px;
+		padding: 15px 27.5px;
 	}
 }
 
 @media all and (max-width: 855px) {
 	.nav>li>a {
-		padding: 15px 29px;
+		padding: 15px 26px;
 	}
 }
 
 @media all and (max-width: 837px) {
 	.nav>li>a {
-		padding: 15px 27.5px;
+		padding: 15px 24.5px;
 	}
 }
 
@@ -745,7 +745,7 @@ textarea {
 
 @media all and (max-width: 819px) {
 	.nav>li>a {
-		padding: 15px 26px;
+		padding: 15px 23px;
 	}
 }
 
@@ -754,13 +754,13 @@ textarea {
 		left: 20px;
 	}
 	.nav>li>a {
-		padding: 15px 24.5px;
+		padding: 15px 21.5px;
 	}
 }
 
 @media all and (max-width: 783px) {
 	.nav>li>a {
-		padding: 15px 23.5px;
+		padding: 15px 20.5px;
 	}
 }
 
