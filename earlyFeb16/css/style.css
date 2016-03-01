@@ -6,8 +6,10 @@ body {
 	padding: 0;
 	height: 100%;
 
-	background: #000; /* Same color as your menu */
-	font-family: Helvetica, Arial, sans-serif;
+	background: #111; /* Same color as your menu */
+	-webkit-font-smoothing: antialiased;
+	font-family: "Ek Mukta", Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
 }
 
 #page {
@@ -17,7 +19,7 @@ body {
 	padding: 20px;
 	padding-bottom: 0px;
 
-	background: #000;
+	background: #111;
 	height: 100%;
 }
 
@@ -116,7 +118,7 @@ a {
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   #toggle-menu {
     display: block;
   }
@@ -128,7 +130,6 @@ a {
 
 .header-boxer {
 	max-width: 1200px;
-	width: 100%;
 	margin: auto;
 	height: 240px;
 
@@ -151,7 +152,7 @@ h1 {
 	color: #fff;
 	line-height: 1.25em;
 	font-family: "Ek Mukta", sans-serif;
-	font-size: 56px;
+	font-size: 5.5rem;
 	letter-spacing: 2.5px;
 }
 
@@ -242,7 +243,7 @@ a {
  */
 .nav>li>a {
 	position: relative;
-	padding: 15px 36px;
+	padding: 15px 38.5px;
 
 	/* TODO: Media Query - Problem occurs around width: 830.75px; */
 }
@@ -268,7 +269,6 @@ a {
 
 .carousel-boxer {
 	position: relative;
-  width: 100%;
   max-width: 1200px;
   margin: auto;
 }
@@ -283,6 +283,36 @@ a {
  */
 .carousel-inner img {
 		max-height: 640px;
+}
+
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
 }
 
 /* --------------------------- MISSION STATEMENT ---------------------------- */
@@ -313,7 +343,6 @@ span {
 /* ------------------------------- FEATURES --------------------------------- */
 
 .features-boxer {
-  width: 100%;
   max-width: 1200px;
   margin: auto;
 }
@@ -334,7 +363,6 @@ p {
 
 .footer {
 	max-width: 1200px;
-	width: 100%;
 	margin: auto;
 	height: 200px;
 	background-color: #e2b96f;
@@ -342,7 +370,8 @@ p {
 }
 
 .footer
-a:hover {
+a:hover,
+i:hover {
 	color: #fff;
 	text-decoration: none;
 }
@@ -374,6 +403,7 @@ i {
 h3 {
 	font-family: "Ek Mukta", sans-serif;
 	font-weight: bold;
+	font-size: 2.3rem;
 	margin-top: 4px;
 }
 
@@ -410,7 +440,6 @@ hr {
 .intro {
 	position: relative;
 	max-width: 750px;
-	width: 100%;
 	margin: auto;
 }
 
@@ -448,7 +477,6 @@ img {
 .concept {
 	position: relative;
 	max-width: 750px;
-	width: 100%;
 	margin: auto;
 }
 
@@ -475,7 +503,6 @@ h4 {
 .staff {
 	position: relative;
 	max-width: 750px;
-	width: 100%;
 	margin: auto;
 }
 
@@ -520,7 +547,6 @@ li {
 .news {
 	position: relative;
 	max-width: 500px;
-	width: 100%;
 	margin: auto;
 }
 
@@ -529,7 +555,6 @@ li {
 .contact-form {
 	position: relative;
 	max-width: 750px;
-	width: 100%;
 	margin: auto;
 }
 
@@ -572,4 +597,179 @@ textarea {
 	left: 25%;
 	background-color: #e2b96f;
 	border-color: #e2b96f;
+}
+
+/* ----------------------------- MEDIA QUERIES ------------------------------ */
+
+@media all and (max-width: 1237px) {
+	.header-title,
+	h1 {
+		font-size: 5rem;
+	}
+}
+
+@media all and (max-width: 1145px) {
+	.header-title,
+	h1 {
+		font-size: 4.5rem;
+	}
+	.header-subtitle {
+		font-size: 26px;
+	}
+}
+
+@media all and (max-width: 1053px) {
+	.header-boxer {
+		height: 220px;
+	}
+	.header-title,
+	h1 {
+		font-size: 4rem;
+	}
+	.header-subtitle {
+		font-size: 20px;
+	}
+	.logo>img {
+	  width: 220px;
+	}
+	.navbar
+	a {
+		font-size: 16px;
+	}
+	.nav>li>a {
+		padding: 15px 41px;
+	}
+}
+
+@media all and (max-width: 986px) {
+	.nav>li>a {
+		padding: 15px 40.5px;
+	}
+}
+
+@media all and (max-width: 980px) {
+	.nav>li>a {
+		padding: 15px 39.5px;
+	}
+}
+
+@media all and (max-width: 969px) {
+	.header-title,
+	h1 {
+		font-size: 3.5rem;
+	}
+	.nav-boxer {
+		top: 10px;
+	}
+	.nav>li>a {
+		padding: 15px 38.5px;
+	}
+	.header-boxer {
+		height: 200px;
+	}
+	.logo>img {
+	  width: 200px;
+	}
+}
+
+@media all and (max-width: 956px) {
+	.nav>li>a {
+		padding: 15px 37.5px;
+	}
+}
+
+@media all and (max-width: 945px) {
+	.nav>li>a {
+		padding: 15px 36.5px;
+	}
+}
+
+@media all and (max-width: 927px) {
+	.nav>li>a {
+		padding: 15px 35px;
+	}
+}
+
+@media all and (max-width: 909px) {
+	.nav>li>a {
+		padding: 15px 33.5px;
+	}
+}
+
+@media all and (max-width: 891px) {
+	.nav>li>a {
+		padding: 15px 32px;
+	}
+}
+
+@media all and (max-width: 873px) {
+	.header-title {
+		left: 10px;
+	}
+	.header-title,
+	h1 {
+		font-size: 3.25rem;
+	}
+	.logo>img {
+		width: 180px;
+	}
+	.social {
+		top: 35px;
+	}
+	.nav>li>a {
+		padding: 15px 30.5px;
+	}
+}
+
+@media all and (max-width: 855px) {
+	.nav>li>a {
+		padding: 15px 29px;
+	}
+}
+
+@media all and (max-width: 837px) {
+	.nav>li>a {
+		padding: 15px 27.5px;
+	}
+}
+
+@media all and (max-width: 823px) {
+	.header-title,
+	h1 {
+		font-size: 3rem;
+	}
+	.nav-boxer {
+		top: 2.5px;
+	}
+}
+
+@media all and (max-width: 819px) {
+	.nav>li>a {
+		padding: 15px 26px;
+	}
+}
+
+@media all and (max-width: 801px) {
+	.header-title {
+		left: 20px;
+	}
+	.nav>li>a {
+		padding: 15px 24.5px;
+	}
+}
+
+@media all and (max-width: 783px) {
+	.nav>li>a {
+		padding: 15px 23.5px;
+	}
+}
+
+@media all and (max-width: 776px) {
+	.header-title,
+	h1 {
+		font-size: 2.75rem;
+	}
+	.header-subtitle {
+		font-size: 16px;
+	}
 }
