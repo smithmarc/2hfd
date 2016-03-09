@@ -1,0 +1,771 @@
+/*
+
+CSS Contents
+________________________________________________________________________________
+
+1. Base (These styles were included in a menu before I removed that menu)
+2. Title
+3. Nav
+4. Carousel
+5. Mission Statement
+6. Features
+7. Footer
+8. Divider
+9. Solo styles
+10. Introduction
+11. Concept
+12. Our Staff
+13. Media
+14. News
+15. Contact
+16. Media Queries
+________________________________________________________________________________
+
+/* Base */
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+
+	background: #111; /* Same color as your menu */
+	-webkit-font-smoothing: antialiased;
+	font-family: "Ek Mukta", Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
+}
+
+.container-fluid {
+	max-width: 1300px;
+}
+
+/* --------------------------------- TITLE ---------------------------------- */
+
+.header-boxer {
+	max-width: 1200px;
+	margin: auto;
+	height: 240px;
+
+	/* For space checking purposes - border: 1px solid #fff; */
+
+}
+
+.logo>img {
+  width: 240px;
+}
+
+.header-title {
+	position: relative;
+	height: 100%;
+}
+
+.header-title,
+h1 {
+	color: #fff;
+	line-height: 1.25em;
+	font-family: "Ek Mukta", sans-serif;
+	font-size: 5.5rem;
+	letter-spacing: 2.5px;
+}
+
+.header-subtitle {
+	position: relative;
+	left: 20px;
+	top: -30px;
+	font-family: "Dancing Script", cursive;
+	font-size: 30px;
+	color: #e2b96f;
+	font-style: italic;
+	letter-spacing: normal;
+}
+
+.social {
+	margin-top: 75px;
+}
+
+.social
+a {
+	color: #e2b96f;
+}
+
+.social a:hover {
+  color: #fff;
+}
+
+.social-table {
+  width: 150px;
+  text-align: center;
+}
+
+.social-table tr {
+  height: 64px;
+}
+
+.social-table-media {
+	display: none;
+  width: 100vw;
+  text-align: center;
+}
+
+/* ---------------------------------- NAV ----------------------------------- */
+
+.nav-boxer {
+	position: relative;
+	max-width: 900px;
+	margin: auto;
+	top: 20px;
+}
+
+.nav-title {
+	display: none;
+}
+
+/*
+ * This is the navbar itself
+ */
+.navbar-default {
+	background-color: #e2b96f;
+	border-color: #f2b96f;
+}
+
+/*
+ * This is the active list item
+ */
+.navbar-default
+.navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+	color: #000;
+	background-color: #cba664;
+}
+
+.navbar
+a {
+	font-family: "Ek Mukta", sans-serif;
+	font-size: 18px;
+}
+
+/*
+ * These are the non-active list items
+ */
+.navbar-default
+.navbar-nav>li>a {
+	color: #fff;
+}
+
+.navbar-nav {
+	float: none;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
+
+.navbar-nav>li {
+	display: inline-block;
+	float:none;
+	padding: 0 10px;
+}
+
+/*
+ * Controls the height and width of the navbar links
+ */
+/*.nav>li>a {
+	position: relative;
+	padding: 15px 28.75px;
+}*/
+
+/*
+ * Controls the color of the nav item when in dropdown-menu mode
+ */
+.navbar-default
+.navbar-nav>.open>a,
+.navbar-default
+.navbar-nav>.open>a:focus,
+.navbar-default
+.navbar-nav>.open>a:hover {
+	color: #000;
+	background-color: #cba664;
+}
+
+.dropdown-menu {
+	background-color: #e2b96f;
+}
+
+/* ------------------------------- CAROUSEL --------------------------------- */
+
+.carousel-boxer {
+	position: relative;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.carousel-control {
+	color: #e2b96f;
+}
+
+/*
+ * Match image height to the smallest image height
+ * to keep site consistent size.
+ */
+.carousel-inner img {
+		max-height: 640px;
+}
+
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+/* --------------------------- MISSION STATEMENT ---------------------------- */
+
+.mission-statement {
+	position: relative;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.mission-statement
+h3 {
+	color: #e2b96f;
+	font-family: "Ek Mukta", sans-serif;
+}
+
+.mission-statement
+h4 {
+	color: #fff;
+	font-family: "Ek Mukta", sans-serif;
+}
+
+.mission-statement
+span {
+	color: #e2b96f;
+}
+
+/* ------------------------------- FEATURES --------------------------------- */
+
+.features-boxer {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.features
+h2 {
+	font-family: "Ek Mukta", sans-serif;
+	color: #e2b96f;
+}
+
+.features
+p {
+	font-family: "Ek Mukta", sans-serif;
+	color: #fff;
+}
+
+/* -------------------------------- FOOTER ---------------------------------- */
+
+.footer {
+	max-width: 1200px;
+	margin: auto;
+	height: 250px;
+	background-color: #e2b96f;
+	border-radius: 10px 10px 0px 0px
+}
+
+.footer
+a {
+	color: #000;
+}
+
+.footer
+a:hover,
+i:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer-table {
+	height: 205px;
+}
+
+#desktop-table
+tbody {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#desktop-table
+td {
+	color: #000;
+	font-family: "Ek Mukta", sans-serif;
+}
+
+#media-table {
+	display: none;
+	text-align: center;
+}
+
+#media-table
+td {
+	color: #000;
+}
+
+#media-table2 {
+	display: none;
+	text-align: center;
+}
+
+#media-table2
+td {
+	color: #000;
+}
+
+.footer-bottom {
+	height: 35px;
+	padding-top: 18px;
+	font-family: "Ek Mukta", sans-serif;
+}
+
+.footer-bottom
+h5 {
+	font-size: 12px;
+}
+
+/* -------------------------------- DIVIDER --------------------------------- */
+
+.divider
+hr {
+	border: 0;
+	height: 1px;
+	background: #333;
+	background-image: linear-gradient(to right, #ccc, #e2b96f, #ccc);
+	max-width: 1200px;
+}
+
+/* ---------------------------- SOLO PAGE STYLES ---------------------------- */
+
+/* ------------------------------ INTRODUCTION ------------------------------ */
+
+.intro {
+	position: relative;
+	max-width: 750px;
+	margin: auto;
+}
+
+.intro
+h2 {
+	color: #e2b96f;
+	font-family: "Ek Mukta", "Arial", sans-serif;
+}
+
+.intro
+span {
+	color: #e2b96f;
+}
+
+.intro
+h3 {
+	color: #fff;
+	font-family: "Ek Mukta", "Arial", sans-serif;
+}
+
+.intro
+h4 {
+	color: #fff;
+	font-family: "Ek Mukta", "Arial", sans-serif;
+	line-height: 1.5em;
+}
+
+.intro
+img {
+	margin: 20px 0 20px 0;
+}
+
+/* -------------------------------- CONCEPT --------------------------------- */
+
+.concept {
+	position: relative;
+	max-width: 750px;
+	margin: auto;
+}
+
+.concept
+span {
+	color: #e2b96f;
+}
+
+.concept
+h2 {
+	color: #e2b96f;
+	font-family: "Ek Mukta", "Arial", sans-serif;
+}
+
+.concept
+h4 {
+	color: #fff;
+	font-family: "Ek Mukta", "Arial", sans-serif;
+	line-height: 1.5em;
+}
+
+/* --------------------------------- STAFF ---------------------------------- */
+
+.staff {
+	position: relative;
+	max-width: 750px;
+	margin: auto;
+}
+
+.staff
+h2 {
+	color: #e2b96f;
+	font-family: "Ek Mukta", "Arial", sans-serif;
+}
+
+.staff
+h3 {
+	color: #fff;
+	font-family: "Ek Mukta", "Arial", sans-serif;
+}
+
+.staff
+h4 {
+	font-family: "Ek Mukta", "Arial", sans-serif;
+	color: #fff;
+	line-height: 1.5em;
+}
+
+.staff
+h5 {
+	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+.staff
+li {
+	color: #e2b96f;
+}
+
+.job-position {
+	border: 2px solid #e2b96f;
+	padding: 7.5px 0px;
+}
+
+/* --------------------------------- MEDIA ---------------------------------- */
+
+.media-boxer {
+	position: relative;
+	max-width: 900px;
+	margin: auto;
+}
+
+.media-first {
+	margin-bottom: 20px;
+}
+
+/* --------------------------------- NEWS ----------------------------------- */
+
+.news {
+	position: relative;
+	max-width: 500px;
+	margin: auto;
+}
+
+/* -------------------------------- CONTACT --------------------------------- */
+
+.contact-form {
+	position: relative;
+	max-width: 750px;
+	margin: auto;
+}
+
+.contact-form
+h2 {
+	font-family: "Ek Mukta", "Arial", sans-serif;
+	color: #e2b96f;
+}
+
+.contact-form
+h4 {
+	font-family: "Ek Mukta", "Arial", sans-serif;
+	color: #fff;
+	position: relative;
+	top: 18px;
+}
+
+form {
+	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-size: 16px;
+	padding: 10px 0px;
+}
+
+input {
+	width: 100%;
+	margin: 2.5px 0px;
+	border-radius: 2px;
+}
+
+textarea {
+	min-width: 100%;
+	margin: 2.5px 0px;
+	border-radius: 2px;
+}
+
+label {
+	color: #fff;
+}
+
+#submit {
+	position: relative;
+	border-radius: 5px;
+	width: 50%;
+	left: 25%;
+	background-color: #e2b96f;
+	border-color: #eaeaea;
+}
+
+/* ----------------------------- MEDIA QUERIES ------------------------------ */
+
+@media all and (max-width: 1237px) {
+	.header-title {
+		top: 10px;
+	}
+	.header-title,
+	h1 {
+		font-size: 5rem;
+	}
+}
+
+@media all and (max-width: 1145px) {
+	.header-title {
+		top: 25px;
+	}
+	.header-title,
+	h1 {
+		font-size: 4.5rem;
+	}
+	.header-subtitle {
+		font-size: 26px;
+	}
+}
+
+@media all and (max-width: 1053px) {
+	.header-boxer {
+		height: 220px;
+	}
+	.header-title,
+	h1 {
+		font-size: 4rem;
+	}
+	.header-subtitle {
+		top: -10px;
+		font-size: 20px;
+	}
+	.logo>img {
+	  width: 220px;
+	}
+	.social {
+		margin-top: 60px;
+	}
+	.navbar
+	a {
+		font-size: 16px;
+	}
+}
+
+@media all and (max-width: 969px) {
+	.header-title,
+	h1 {
+		font-size: 3.5rem;
+	}
+	.header-subtitle {
+		top: -5px;
+	}
+	.social {
+		left: -50px;
+		margin-top: 50px;
+	}
+	.nav-boxer {
+		top: 10px;
+	}
+	.header-boxer {
+		height: 200px;
+	}
+	.logo>img {
+	  width: 200px;
+	}
+}
+
+@media all and (max-width: 891px) {
+	.social {
+		margin-top: 40px;
+	}
+	.navbar-nav>li {
+		padding: 0 6.5px;
+	}
+}
+
+@media all and (max-width: 873px) {
+	.header-title {
+		left: 10px;
+	}
+	.header-title,
+	h1 {
+		font-size: 3.25rem;
+	}
+	.logo>img {
+		width: 180px;
+	}
+	.social {
+		margin-top: 25px;
+	}
+}
+
+@media all and (max-width: 837px) {
+	.navbar-nav>li {
+		padding: 0 5.5px;
+	}
+}
+
+@media all and (max-width: 823px) {
+	.header-title,
+	h1 {
+		font-size: 3rem;
+	}
+	.nav-boxer {
+		top: 2.5px;
+	}
+	.navbar-nav>li {
+		padding: 0 5px;
+	}
+}
+
+@media all and (max-width: 801px) {
+	.navbar-nav>li {
+		padding: 0 3px;
+	}
+}
+
+@media all and (max-width: 776px) {
+	.header-title,
+	h1 {
+		font-size: 2.75rem;
+	}
+	.header-subtitle {
+		font-size: 16px;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.header-title {
+		display: none;
+	}
+	.header-boxer, img {
+		width: 100%;
+		text-align: center;
+	}
+	.logo, img {
+		width: 210px;
+		margin: 0 auto;
+	}
+	.logo>a {
+		width: 210px;
+	}
+	.social-table {
+		display: none
+	}
+	.social-table-media {
+		display: table;
+		margin-left: 22.5px;
+	}
+	.nav-boxer {
+		margin-top: 50px;
+	}
+	.navbar-nav>li {
+		display: block;
+	}
+	.nav-title {
+		color: #000;
+	  display: block;
+	  font-size: 18px;
+	  font-weight: 300;
+	  left: 50%;
+	  line-height: 50px;
+	  margin-left: -35%;
+	  overflow: hidden;
+	  padding: 0;
+	  position: absolute;
+	  text-align: center;
+	  text-overflow: ellipsis;
+	  white-space: nowrap;
+	  width: 70%;
+	}
+	.media-clear {
+		display: none;
+	}
+}
+
+@media all and (max-width: 525px) {
+	#desktop-table {
+		display: none;
+	}
+	#media-table {
+		display: table;
+	}
+	#media-table2 {
+		display: table;
+	}
+}
+
+@media all and (max-width: 410px) {
+	.nav-title {
+		font-size: 14px;
+	}
+}
+
+@media all and (max-width: 360px) {
+	.nav-title {
+		text-align: left;
+		left: 0;
+		margin-left: 15%;
+	}
+}
+
+@media all and (max-width: 340px) {
+	.nav-title {
+		margin-left: 10%;
+	}
+}
+
+/* iPhone 4/5 width */
+@media all and (max-width: 320px) {
+}
+
+@media all and (max-width: 300px) {
+	.nav-title {
+		margin-left: 5%;
+	}
+}
