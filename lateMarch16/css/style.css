@@ -1,0 +1,366 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+
+	position: relative;
+
+	background: #111;
+	font-family: 'Signika', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+}
+
+p {
+	color: #fff;
+}
+
+gold {
+	color: #e2b96f;
+	font-weight: bold;
+}
+
+.container-fluid {
+  max-width: 1200px;
+}
+
+header {
+  padding: 10px 10px 0;
+}
+
+/*header > div {
+	display: inline;
+}*/
+
+header .logo {
+	width: 389px;
+  margin: 0 auto;
+}
+
+header .logo a {
+	width: 389px;
+}
+
+@media (max-width: 767px) {
+	header .logo a {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 375px) { /* iPhone 6 */
+	header .logo img {
+		width: 355px;
+	}
+}
+
+@media (max-width: 360px) { /* Galaxy S5 */
+	header .logo img {
+		width: 340px;
+	}
+}
+
+@media (max-width: 320px) { /* iPhone 4/5 */
+	header .logo img {
+		width: 300px;
+	}
+}
+
+header .main-title {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #eee;
+}
+
+@media (max-width: 767px) {
+	header .main-title {
+		display: none;
+	}
+}
+
+.social-buttons {
+	margin: 0 auto;
+	text-align: center;
+}
+
+header .social-buttons i {
+	color: #e2b96f;
+}
+
+@media (max-width: 767px) {
+	.social-buttons {
+		margin: 0 0 10px 0;
+	}
+	header .social-buttons i {
+		padding: 0 5%;
+	}
+}
+
+header .navbar-default {
+	background: #111;
+	border: 1px solid #e2b96f;
+	border-radius: 5px;
+}
+
+header .navbar-default .navbar-brand {
+	color: #e2b96f;
+}
+
+header .navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+	background-color: #e2b96f;
+}
+
+header .navbar-default .navbar-toggle {
+	border-color: #e2b96f;
+	background: #e2b96f;
+}
+
+header .navbar-default .navbar-toggle .icon-bar {
+	background-color: #000;
+}
+
+header .navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	border-color: #e2b96f;
+}
+
+header .navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+	color: #000;
+	background-color: #e2b96f;
+}
+
+header .navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+	color: #fff;
+	background-color: #e2b96f;
+}
+
+
+header .navbar-default .navbar-nav>li>a {
+	color: #fff;
+	font-size: 17px;
+}
+
+header nav ul li a {
+	padding: 3px 10px;
+	border: 1px solid #333;
+	border-radius: 5px;
+}
+
+header nav ul li a.selected {
+	background-color: #e2b96f;
+	color: #000;
+	border: none;
+}
+
+@media (max-width: 767px) {
+	header nav ul {
+		width: 100%;
+		margin: 10px 0 0 0;
+		list-style: none;
+		text-align: center;
+		padding: 0 10px;
+		font-size: 18px;
+		letter-spacing: 0.1em;
+	}
+	header nav ul li {
+		margin: 0 0 10px 0;
+	}
+	header nav ul li:last-child {
+		margin: 0;
+	}
+	header nav ul li a {
+		color: #fff;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+		color: #fff;
+	}
+}
+
+.home-content {
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+}
+
+.home-content h3 {
+	border: 3px solid #fff;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px 5px;
+	color: #e2b96f;
+}
+
+.intro-content {
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	margin: 10px 10px;
+}
+
+.intro-content h3 {
+	margin-top: 5px;
+}
+
+.intro-content h4 {
+	color: #fff;
+	margin: 0 15px;
+}
+
+.intro-content img {
+	width: 50%;
+	margin: 10px auto 10px;
+}
+
+@media (max-width: 767px) {
+	.intro-content p {
+		text-align: center;
+	}
+	.intro-content img {
+		width: 100%;
+	}
+}
+
+/*.intro-content p {
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+}*/
+
+.concept-content {
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	margin: 10px 10px;
+}
+
+.concept-content h3 {
+	margin-top: 5px;
+}
+
+.concept-content p.indent {
+	margin: 10px 20px;
+}
+
+@media (max-width: 767px) {
+	.concept-content p {
+		text-align: center;
+	}
+	.concept-content p.age-level {
+		text-align: left;
+	}
+}
+
+.staff-content {
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	margin: 10px 10px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.staff-content .team-role {
+	color: #fff;
+	text-align: center;
+	border: 2px solid #e2b96f;
+	border-radius: 5px;
+	padding: 5px 5px;
+}
+
+/* 'information' class to be applied to my paragraph here to 'bump' it up
+ * in the desktop view.
+ */
+
+.staff-content h3 {
+	margin-top: 5px;
+}
+
+.staff-content h4 {
+	color: #fff;
+}
+
+.staff-content ul li {
+	color: #e2b96f;
+}
+
+@media (max-width: 767px) {
+	.staff-content p {
+		text-align: center;
+	}
+	.staff-content img {
+		margin-bottom: 10px;
+	}
+}
+
+.media-content {
+	margin: 10px 10px;
+}
+
+.media-content h3 {
+	margin-top: 5px;
+}
+
+.media-content .media * {
+	width: 100%;
+	margin: 5px auto;
+}
+
+footer {
+	width: 100%;
+	margin: 10px auto 0 auto;
+	padding: 5px 0 10px 0;
+	border-radius: 10px 10px 0px 0px;
+	background: #e2b96f;
+	text-align: center;
+}
+
+footer i {
+	color: #000;
+}
+
+@media (max-width: 767px) {
+	footer .social-buttons {
+		margin: 0 auto;
+	}
+	footer .social-buttons i {
+		padding: 0 3.5%;
+	}
+	footer .contact-information i {
+		margin: 0 25px;
+	}
+	footer .contact-information .phone {
+		margin: 10px 0 20px 0;
+	}
+	footer .contact-information .phone a {
+		color: #000;
+		margin: 0 10px;
+		padding: 7.5px 5px;
+		border: 1px solid #000;
+		border-radius: 5px;
+		font-size: 16px;
+	}
+	.popover {
+		background: #000;
+	}
+	.popover-content {
+		font-family: 'Signika', sans-serif;
+		font-size: 16px;
+		border: none;
+		background: #000;
+		color: #e2b96f;
+	}
+	.popover.top .arrow:after {
+	  border-top-color: #000;
+	}
+	footer .watermark {
+		color: #000;
+		font-size: 12px;
+		text-align: center;
+		margin: 10px auto 0 auto;
+	}
+}
