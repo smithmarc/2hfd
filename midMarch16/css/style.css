@@ -522,6 +522,10 @@ li {
 	border: 1px solid #e2b96f;
 }
 
+.media-boxer #fb-root {
+	margin-bottom: 20px;
+}
+
 /* --------------------------------- NEWS ----------------------------------- */
 
 .news {
