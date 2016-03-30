@@ -31,7 +31,7 @@ body {
 
 	background: #111; /* Same color as your menu */
 	-webkit-font-smoothing: antialiased;
-	font-family: "Ek Mukta", Helvetica, Arial, sans-serif;
+	font-family: "Signika", Helvetica, Arial, sans-serif;
 	overflow-x: hidden;
 }
 
@@ -63,7 +63,7 @@ body {
 h1 {
 	color: #fff;
 	line-height: 1.25em;
-	font-family: "Ek Mukta", sans-serif;
+	font-family: "Signika", sans-serif;
 	font-size: 5.5rem;
 	letter-spacing: 2.5px;
 }
@@ -140,7 +140,7 @@ h1 {
 
 .navbar
 a {
-	font-family: "Ek Mukta", sans-serif;
+	font-family: "Signika", sans-serif;
 	font-size: 18px;
 }
 
@@ -251,13 +251,13 @@ a {
 .mission-statement
 h3 {
 	color: #e2b96f;
-	font-family: "Ek Mukta", sans-serif;
+	font-family: "Signika", sans-serif;
 }
 
 .mission-statement
 h4 {
 	color: #fff;
-	font-family: "Ek Mukta", sans-serif;
+	font-family: "Signika", sans-serif;
 }
 
 .mission-statement
@@ -274,13 +274,13 @@ span {
 
 .features
 h2 {
-	font-family: "Ek Mukta", sans-serif;
+	font-family: "Signika", sans-serif;
 	color: #e2b96f;
 }
 
 .features
 p {
-	font-family: "Ek Mukta", sans-serif;
+	font-family: "Signika", sans-serif;
 	color: #fff;
 }
 
@@ -328,10 +328,12 @@ h5 {
 
 .contact-pane {
 	position: relative;
-	top: 9.5em;
+	top: 7.8em;
 	left: 5em;
 	margin: 0 auto;
 	text-align: justify-all;
+	font-size: 1.2em;
+	color: #000;
 }
 
 .social-pane-table {
@@ -358,7 +360,8 @@ tbody {
 #desktop-table
 td {
 	color: #000;
-	font-family: "Ek Mukta", sans-serif;
+	font-family: "Signika", sans-serif;
+	font-size: 1.2em;
 }
 
 #media-table {
@@ -410,7 +413,7 @@ hr {
 .intro
 h2 {
 	color: #e2b96f;
-	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-family: "Signika", "Arial", sans-serif;
 }
 
 .intro
@@ -421,13 +424,13 @@ span {
 .intro
 h3 {
 	color: #fff;
-	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-family: "Signika", "Arial", sans-serif;
 }
 
 .intro
 h4 {
 	color: #fff;
-	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-family: "Signika", "Arial", sans-serif;
 	line-height: 1.5em;
 }
 
@@ -452,13 +455,13 @@ span {
 .concept
 h2 {
 	color: #e2b96f;
-	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-family: "Signika", "Arial", sans-serif;
 }
 
 .concept
 h4 {
 	color: #fff;
-	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-family: "Signika", "Arial", sans-serif;
 	line-height: 1.5em;
 }
 
@@ -473,25 +476,25 @@ h4 {
 .staff
 h2 {
 	color: #e2b96f;
-	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-family: "Signika", "Arial", sans-serif;
 }
 
 .staff
 h3 {
 	color: #fff;
-	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-family: "Signika", "Arial", sans-serif;
 }
 
 .staff
 h4 {
-	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-family: "Signika", "Arial", sans-serif;
 	color: #fff;
 	line-height: 1.5em;
 }
 
 .staff
 h5 {
-	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-family: "Signika", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 1.5em;
 }
@@ -511,11 +514,12 @@ li {
 .media-boxer {
 	position: relative;
 	max-width: 900px;
-	margin: auto;
+	margin: 0 auto 20px;
 }
 
-.media-first {
-	margin-bottom: 20px;
+.media-boxer img {
+	padding: 5px;
+	border: 1px solid #e2b96f;
 }
 
 /* --------------------------------- NEWS ----------------------------------- */
@@ -536,20 +540,20 @@ li {
 
 .contact-form
 h2 {
-	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-family: "Signika", "Arial", sans-serif;
 	color: #e2b96f;
 }
 
 .contact-form
 h4 {
-	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-family: "Signika", "Arial", sans-serif;
 	color: #fff;
 	position: relative;
 	top: 18px;
 }
 
 form {
-	font-family: "Ek Mukta", "Arial", sans-serif;
+	font-family: "Signika", "Arial", sans-serif;
 	font-size: 16px;
 	padding: 10px 0px;
 }
@@ -580,14 +584,21 @@ label {
 }
 
 /* ----------------------------- MEDIA QUERIES ------------------------------ */
-
+@media all and (min-width: 1238px) {
+	.header-title {
+		top: 20px;
+	}
+	.header-title h1 {
+		font-size: 5rem;
+	}
+}
 @media all and (max-width: 1237px) {
 	.header-title {
 		top: 10px;
 	}
 	.header-title,
 	h1 {
-		font-size: 5rem;
+		font-size: 4.75rem;
 	}
 }
 
@@ -712,11 +723,21 @@ label {
 	.navbar-nav>li {
 		padding: 0 5px;
 	}
+	.contact-pane {
+		left: 1.5em;
+	}
 }
 
 @media all and (max-width: 801px) {
 	.navbar-nav>li {
 		padding: 0 3px;
+	}
+}
+
+@media all and (max-width: 788px) {
+	.contact-pane {
+		font-size: 1em;
+		top: 9.5em;
 	}
 }
 
