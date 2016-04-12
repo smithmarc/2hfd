@@ -60,6 +60,8 @@ header .title h1 {
 header .title h3 {
 	font-size: 7rem;
 	color: #e2b96f;
+	-webkit-transition: all .5s;
+	transition: all .5s;
 }
 
 header .social-buttons .social-table {
@@ -84,9 +86,10 @@ header .sub-title {
 }
 
 header .sub-title h5 {
-	font-size: 1.25em;
+	font-size: 1.75em;
 	-webkit-transition: all .5s;
 	transition: all .5s;
+	font-family: "Dancing Script", cursive;
 }
 
 @media (max-width: 1263px) {
@@ -124,7 +127,7 @@ header .sub-title h5 {
     top: 20px;
   }
 	header .sub-title h5 {
-		font-size: 0.95em;
+		font-size: 1.25em;
 	}
   header .social-buttons {
     font-size: 0.75em;
@@ -146,6 +149,9 @@ header .sub-title h5 {
 @media (max-width: 870px) {
 	header .title h1 {
 		font-size: 2.5rem;
+	}
+	header .title h3 {
+		font-size: 5rem;
 	}
 }
 
@@ -300,7 +306,6 @@ nav ul li {
 .mission-statement h2 {
 	margin: 30px auto;
 	color: #e2b96f;
-	text-decoration: underline;
 	font-size: 1.75em;
 }
 
@@ -378,6 +383,10 @@ footer .social-buttons .social-table {
 
 footer .social-buttons .social-table tr {
   height: 74px;
+}
+
+footer .emphasis {
+	text-decoration: underline;
 }
 
 @media (max-width: 1065px) {
@@ -543,4 +552,16 @@ footer .social-buttons .social-table tr {
 	.media img {
 		max-height: none;
 	}
+}
+
+							/* -------------------- NEWS -------------------- */
+
+.news {
+	max-width: 800px;
+	margin: 0 auto;
+	padding-bottom: 15px;
+}
+
+.news h2 {
+	color: #e2b96f;
 }
