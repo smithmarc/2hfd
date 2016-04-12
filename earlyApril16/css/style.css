@@ -535,6 +535,10 @@ footer .social-buttons .social-table tr {
 	max-height: 151px;
 }
 
+.media .fb-root {
+	margin-bottom: 10px;
+}
+
 @media (max-width: 767px) {
 	.media img {
 		max-height: none;
