@@ -513,3 +513,30 @@ footer .social-buttons .social-table tr {
 	letter-spacing: 0.025em;
 	font-size: 2rem;
 }
+
+						/* -------------------- MEDIA -------------------- */
+
+.media {
+	max-width: 800px;
+	margin: 0 auto;
+	padding-bottom: 15px;
+}
+
+.media h2 {
+	color: #e2b96f;
+}
+
+.media ul {
+	list-style: none;
+	padding: 0;
+}
+
+.media img {
+	max-height: 151px;
+}
+
+@media (max-width: 767px) {
+	.media img {
+		max-height: none;
+	}
+}
