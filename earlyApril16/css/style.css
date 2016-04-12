@@ -548,6 +548,11 @@ footer .emphasis {
 	margin-bottom: 10px;
 }
 
+.media .thumbnail {
+	background-color: #e2b96f;
+	border-color: #e2b96f;
+}
+
 @media (max-width: 767px) {
 	.media img {
 		max-height: none;
@@ -564,4 +569,58 @@ footer .emphasis {
 
 .news h2 {
 	color: #e2b96f;
+}
+
+						/* -------------------- CONTACT -------------------- */
+
+.contact {
+	max-width: 800px;
+	margin: 0 auto;
+	padding-bottom: 15px;
+}
+
+.contact h2 {
+	color: #e2b96f;
+}
+
+form {
+	font-family: "Signika", "Arial", sans-serif;
+	font-size: 16px;
+	padding: 10px 0px;
+}
+
+input {
+	width: 100%;
+	margin: 2.5px 0px;
+	border-radius: 2px;
+}
+
+textarea {
+	min-width: 100%;
+	margin: 2.5px 0px;
+	border-radius: 2px;
+}
+
+label {
+	color: #ffeccb;
+}
+
+#submit {
+	position: relative;
+	border-radius: 5px;
+	width: 50%;
+	left: 25%;
+	background-color: #e2b96f;
+	border-color: #eaeaea;
+}
+
+.thanks {
+	border: 2px #ffeccb solid;
+	border-radius: 5px;
+	padding: 150px 10px;
+}
+
+.thanks h2,
+.thanks h4 {
+	text-align: center;
 }
