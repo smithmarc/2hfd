@@ -9,6 +9,12 @@
   <meta name="keywords" content="2Halfs, Football, Development,
     Football Development, Soccer, Youth, Training, 2HFD">
   <meta name="author" content="Marc Smith, Dean Pickering, Shane Pickering">
+  <script src="validation.js"></script>
+	<script>
+	required.add('Full_Name','NOT_EMPTY','Full Name');
+	required.add('Email_Address','EMAIL','Email Address');
+	required.add('Your_Message','NOT_EMPTY','Your Message');
+	</script>
   <link rel="icon" href="../assets/img/favicon.ico">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -101,6 +107,7 @@
             <ul class="dropdown-menu">
               <li><a href="../media/images.html">Images</a></li>
               <li><a href="../media/videos.html">Videos</a></li>
+              <li><a href="../media/flyer.html">Flyer</a></li>
             </ul>
           </li>
           <li><a href="../news/index.html">News</a></li>
@@ -114,21 +121,23 @@
     <div class="row contact">
       <h2>Contact Us:</h2>
       <div class="col-sm-6 col-sm-offset-3">
-        <form id="contactform" action="contactengine.php" method="POST">
-          <label>Name:</label>
-          <input name="name" type="text" id="name">
+        <form id="contactform" action="mailform.php" method="POST" onSubmit="return validate.check(this)">
+          <label for="Full_Name" class="required">Name:</label>
+          <input name="Full_Name" type="text" id="Full_Name">
           <br>
-          <label>Age:</label>
-          <input name="age" type="text" id="age">
+          <label for="Age" class="not-required">Age:</label>
+          <input name="Age" type="text" id="Age">
           <br>
-          <label>Club:</label>
-          <input name="club" type="text" id="club">
+          <label for="Club" class="not-required">Club:</label>
+          <input name="Club" type="text" id="Club">
           <br>
-          <label>Email:</label>
-          <input name="email" type="email" id="email">
+          <label for="Email_Address" class="required">Email:</label>
+          <input name="Email_Address" type="email" id="Email_Address">
           <br>
-          <label>Comment:</label>
-          <textarea name="comment" id="comment" rows="5" placeholder="Ask us anything!"></textarea>
+          <label for="Telephone_Number" class="not-required">Phone:</label>
+          <input type="text" name="Telephone_Number" id="Telephone_Number">
+          <label for="Your_Message" class="required">Your Message:</label>
+          <textarea name="Your_Message" id="Your_Message" rows="5" placeholder="Ask us anything!"></textarea>
           <br>
           <input value="Submit" type="submit" id="submit">
         </form>
