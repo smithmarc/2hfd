@@ -253,10 +253,6 @@ nav ul li {
 
 						/* -------------------- CAROUSEL -------------------- */
 
-.carousel {
-	max-height: 815px;
-}
-
 .carousel-fade .carousel-inner .item {
   -webkit-transition-property: opacity;
   transition-property: opacity;
