@@ -39,6 +39,10 @@ alert a {
 	}
 }
 
+.fb-video {
+	max-height: 815px;
+}
+
             /* -------------------- HEADER -------------------- */
 
 header .logo {
